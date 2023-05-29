@@ -13,7 +13,9 @@
                 <p class='meta-p'> {data.meta.author}</p>
                 <p class='meta-p'> {data.meta.created}</p>
                 {#if data.meta.image}
+                <p style="text-align: center;">
                     <img class='main-image' src="{base}/{data.meta.image}" alt="">
+                </p>
                 {/if}
             </div>
             <div class='story'>
@@ -28,10 +30,12 @@
         color: rgb(37, 37, 37);
         text-align: start;
         margin: 0;
+        margin-left: 15px;
         font-weight: 600;
     }
     .meta-p {
         margin: 0px;
+        margin-left: 15px;
     }
     .meta {
         margin: 20px 0 20px 0;
@@ -42,7 +46,7 @@
         object-fit: contain;
         border: 1px solid rgb(209, 209, 209);
         border-radius: 20px;
-        margin: 20px 0 0 0;
+        margin: 20px 0 0 15px;
     }
     .story-center {
         margin: 30px 0 30px 0;
@@ -53,6 +57,18 @@
     .story {
         width: 800px;
         margin: 15px;        
+    }
+    
+    :global(blockquote){
+        margin: 0;
+        border: 1px solid rgb(240, 240, 240);
+        background-color: rgb(250, 250, 250);
+        border-radius: 15px;
+    }
+
+    :global(blockquote)> :global(p) {
+        margin: 40px;
+        color: black;
     }
     
 
@@ -69,7 +85,7 @@
         }
 
         .meta-title {
-            text-align: center;
+            text-align: start;
             margin-bottom: 15px;
         }
 

@@ -56,9 +56,9 @@
 
     }
     .story:hover {
-        background-color: rgb(222, 222, 222);
+        background-color: rgb(245, 245, 245);
         border-radius: 20px;
-        border: 1px solid rgb(175, 175, 175);
+        border: 1px solid rgb(225, 225, 225);
     }
     .title {
         font-size: larger;
