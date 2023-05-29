@@ -1,3 +1,11 @@
+/**
+ * Story log is how we register it to {base}/story/{page}
+ * if a markdown exists then the page is published
+ * but to make it available to the story page, then append it to the stories variable.
+ * 
+ */
+
+
 
 interface Story {
     title: string;
