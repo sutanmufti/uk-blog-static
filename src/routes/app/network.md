@@ -5,6 +5,7 @@ author: Sutan Mufti
 image: network.jpg
 latitude: 51.484086 
 longitude: 0.024116
+imagesrc: Sutan & Rini (2023)
 
 tags:
  - test tag
