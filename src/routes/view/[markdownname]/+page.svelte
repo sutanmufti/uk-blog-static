@@ -3,6 +3,11 @@
     import { base } from '$app/paths';
     export let data;
 
+    const {meta} =data
+
+    
+    const {tags} = meta
+
 
     
 </script>
@@ -10,8 +15,15 @@
         <div>
             <div class='meta'>
                 <h1 class='meta-title'> {data.meta.title}</h1>
-                <p class='meta-p'> {data.meta.author}</p>
                 <p class='meta-p'> {data.meta.created}</p>
+                {#if tags}
+                    {#each tags as t,i}
+                    <div class='tags-container'>
+                            <span class='tags'>{t}</span>
+                        </div>
+                    {/each}
+                {/if}
+                <p class='meta-p'> Written by {data.meta.author}</p>
                 {#if data.meta.image}
                 <p style="text-align: center;">
                     <img class='main-image' src="{base}/{data.meta.image}" alt="">
@@ -26,6 +38,17 @@
 
 
 <style>
+    .tags {
+        margin: 5px 7px 5px 7px;
+        color: rgb(143, 143, 143);
+
+    }
+    .tags-container {
+        background-color: rgb(237, 237, 237);
+        display: inline-block;
+        margin: 20px 0px 20px 15px;
+        border-radius: 15px;
+    }
     .meta-title {
         color: rgb(37, 37, 37);
         text-align: start;
