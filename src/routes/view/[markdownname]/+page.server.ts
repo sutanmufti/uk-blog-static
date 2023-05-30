@@ -19,6 +19,7 @@ export async function load({ params }) {
             latitude?: string
             longitude?: string 
             tags?: string[]
+            imagesrc?: string
         }={}
         const md = new MarkdownIt().use(metadata_block,{
             parseMetadata: yaml.parse,

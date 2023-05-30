@@ -23,11 +23,15 @@
                         </div>
                     {/each}
                 {/if}
-                <p class='meta-p nomargin'> Written by {data.meta.author}</p>
+                <p class='meta-p nomargin'> Written by <span class='authorname'>{data.meta.author}</span></p>
                 {#if data.meta.image}
                 <p style="text-align: center;">
                     <img class='main-image' src="{base}/{data.meta.image}" alt="">
+                    
                 </p>
+                <div class='imagesource'>
+                    image source: {data.meta.imagesrc}
+                </div>
                 {/if}
             </div>
             <div class='story'>
@@ -38,6 +42,14 @@
 
 
 <style>
+    .imagesource {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .authorname {
+        color: rgb(0, 55, 138);
+        font-weight: bolder;
+    }
     .tags {
         margin: 5px 7px 5px 7px;
         color: rgb(143, 143, 143);
@@ -69,7 +81,7 @@
         object-fit: cover;
         border: 1px solid rgb(209, 209, 209);
         border-radius: 20px;
-        margin: 20px 0 0 15px;
+        margin: 0px 0 0 0px;
     }
     .story-center {
         margin: 30px 0 30px 0;
