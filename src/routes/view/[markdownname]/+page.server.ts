@@ -4,8 +4,6 @@ import { error } from '@sveltejs/kit';
 import metadata_block from 'markdown-it-metadata-block'
 import yaml from 'yaml'
 
-import zzz from '@story/testdata.json'
-
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
     try {
