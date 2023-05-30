@@ -91,6 +91,7 @@
         border: 0px solid red;
         border-bottom: 0.5px solid #dedede;
         padding: 0 20px 0 20px;
+        box-shadow: 0px 0px 5px rgb(197, 197, 197);
         /* padding: 20px; */
     }    
 </style>
