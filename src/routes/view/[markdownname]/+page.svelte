@@ -14,16 +14,16 @@
     <div class='story-center'>
         <div>
             <div class='meta'>
-                <h1 class='meta-title'> {data.meta.title}</h1>
-                <p class='meta-p'> {data.meta.created}</p>
+                <h1 class='meta-title nomargin'> {data.meta.title}</h1>
+                <p class='meta-p nomargin'> {data.meta.created}</p>
                 {#if tags}
                     {#each tags as t,i}
-                    <div class='tags-container'>
+                    <div class='tags-container nomargin'>
                             <span class='tags'>{t}</span>
                         </div>
                     {/each}
                 {/if}
-                <p class='meta-p'> Written by {data.meta.author}</p>
+                <p class='meta-p nomargin'> Written by {data.meta.author}</p>
                 {#if data.meta.image}
                 <p style="text-align: center;">
                     <img class='main-image' src="{base}/{data.meta.image}" alt="">
@@ -96,6 +96,10 @@
     
 
     @media only screen and (max-width: 900px) {
+        .nomargin {
+            margin: 0;
+            margin-bottom: 10px;
+        }
         .story {
             width: 300px;
             margin: 15px;        
@@ -109,13 +113,18 @@
 
         .meta-title {
             text-align: start;
+            margin: 0;
             margin-bottom: 15px;
+
         }
 
         .main-image {
             width: 300px;
             height: 200px;
+            margin: 0;
         }
+
+        
     }
    
 </style>
