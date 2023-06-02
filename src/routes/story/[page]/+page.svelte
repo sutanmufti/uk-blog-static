@@ -1,9 +1,12 @@
 <script lang='ts'>
     export let data;
     import { base } from '$app/paths';
+    import SearchBar from './SearchBar.svelte';
     const {stories} = data
 </script>
 
+
+<SearchBar/>
 <div class='container'>
     <div class='main'>
 
