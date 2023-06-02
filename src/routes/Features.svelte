@@ -18,7 +18,7 @@
 <style>
     .main {
         padding: 15px;
-        background-color: rgb(251, 251, 251);
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-flow: row;
         flex-wrap: wrap;
