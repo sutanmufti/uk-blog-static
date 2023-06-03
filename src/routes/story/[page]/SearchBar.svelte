@@ -32,9 +32,9 @@
             {/if}
             <input class='searchbar' type="text" on:focusin={()=>{onfocusStatus = true}} on:focusout={()=>{onfocusStatus = false}} bind:value={searchvalue} placeholder='Any stories in mind?'>
             {#if searchvalue}
-                <button class='submitbutton button' on:click={()=>{searchvalue=''}}>
+                <div class='submitbutton button' on:click={()=>{searchvalue=''}}>
                     <Fa icon={faXmark}/>
-                </button>
+                </div>
 
                 <div class='submitbutton'>
                     |
@@ -118,5 +118,23 @@
         padding: 15px;
         border-radius: 20px;
     } */
+
+    @media only screen and (max-width: 600px) {
+        .searchbar::placeholder{
+            font-size: 0.75em;
+        }
+
+        .main {
+            /* width: 400px; */
+            margin: 20px 30px 0 30px
+        }
+        .inputcontainer {
+            width: 400px;
+        }
+        .searchbar {
+            width: 200px;
+        }
+
+    }
 
 </style>
