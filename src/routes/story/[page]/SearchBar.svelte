@@ -8,6 +8,7 @@
     // const ok = f.faSearchDollar
 
     let searchvalue: string;
+    let isclicking: boolean;
     let focusborder = ''
     let onfocusStatus = false
     $: if (onfocusStatus) {
@@ -54,6 +55,7 @@
         color: black;
         cursor: pointer;
     }
+
     .submitbutton {
         width: fit-content;
         font-size: 1em;
