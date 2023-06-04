@@ -2,13 +2,16 @@
     export let data;
     import { base } from '$app/paths';
     import SearchBar from './SearchBar.svelte';
+    import Paginaton from './Paginaton.svelte';
     const {stories} = data
 </script>
 
 
 <SearchBar/>
-<div class='container'>
+<!-- {JSON.stringify(data)} -->
+<div class='container' data-sveltekit-reload>
     <div class='main'>
+        <Paginaton currentpage={data.page} maxpage={data.maxpage}/>
 
         {#each stories as s,i}
             <a href="{base}/view/{s.markdownfile}">
@@ -31,6 +34,8 @@
             </a>
         
         {/each}
+
+    <Paginaton currentpage={data.page} maxpage={data.maxpage}/>
     </div>
 </div>
 

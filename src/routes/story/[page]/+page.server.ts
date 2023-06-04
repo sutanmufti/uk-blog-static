@@ -5,8 +5,16 @@ export function load({params}){
     const {page} = params 
     const pagenum = Number(page);
 
-    const logs = stories.slice(pagenum, pagenum+20);
+    const perpage = 5
+
+    const storieslength = stories.length
+
+    const maxpage = Math.ceil( storieslength / perpage) - 1
+
+    const logs = stories.slice(pagenum*perpage, pagenum*perpage+perpage);
     return {
-        stories: logs
+        stories: logs,
+        page: Number(page),
+        maxpage: Number(maxpage)
     }
 }
