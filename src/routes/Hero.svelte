@@ -118,6 +118,7 @@
         font-size: 2em;
         text-align:start;
         display: block;
+        color: black
     }
 
     .hero {
