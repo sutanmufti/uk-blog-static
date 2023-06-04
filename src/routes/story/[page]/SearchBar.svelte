@@ -2,6 +2,7 @@
     import Fa from 'svelte-fa/src/fa.svelte'
     import { faCaretDown, faCaretUp, faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons'
     import { fade } from 'svelte/transition';
+    import { base } from '$app/paths';
     // import f from '@fortawesome/free-solid-svg-icons';
 
 
@@ -24,13 +25,13 @@
 
 <div class='main'>
     <!-- <div class='inputcontainer' style={focusborder}> -->
-        <form action="" class='inputcontainer' style={focusborder}>
+        <form method="POST" action="{base}/search/" class='inputcontainer' style={focusborder}>
             {#if !searchvalue && !onfocusStatus}
             <div class='submitbutton' style='margin-left: 5px; margin-right: 10px' transition:fade={{duration: 100}}>
                 <Fa icon={faMagnifyingGlass}/>
             </div>
             {/if}
-            <input class='searchbar' type="text" on:focusin={()=>{onfocusStatus = true}} on:focusout={()=>{onfocusStatus = false}} bind:value={searchvalue} placeholder='Any stories in mind?'>
+            <input class='searchbar' type="text" on:focusin={()=>{onfocusStatus = true}} on:focusout={()=>{onfocusStatus = false}} bind:value={searchvalue} placeholder='Any stories in mind?' name="keywords">
             {#if searchvalue}
                 <div class='submitbutton button' on:click={()=>{searchvalue=''}}>
                     <Fa icon={faXmark}/>

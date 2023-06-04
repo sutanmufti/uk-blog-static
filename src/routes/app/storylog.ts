@@ -7,7 +7,7 @@
 
 
 
-interface Story {
+export interface Story {
     title: string;
     author: string;
     description: string;
