@@ -14,6 +14,8 @@
 
     function removeTooltip (){
     }
+
+    let searchvalue: string;
 </script>
 
 <svelte:window on:click={removeTooltip}></svelte:window>
@@ -31,15 +33,20 @@
                 <div class='caption'>
                     We collect stories from Indonesians accross the UK. This is the knowledge repository for Indonesian in the UK
                 </div>
-                <div class='goto'>
-                    <a href="{base}/story/0">
-                        <button id='go'>Go to Blog</button>
-                    </a>
-                    <button id='colaborate'>I am Arriving in London Soon!</button>
-                </div>
-                <!-- <form  action="/action_page.php">
-                    <input class="searchinput" type="text" placeholder="Search.." name="search">
-                  </form> -->
+                <form  method="POST" action="{base}/search/" class='inputcontainer'>
+                    <div class='goto'>
+                        <!-- <a href="{base}/story/0"> -->
+                            <input class="searchinput" type="text" placeholder="Search for stories" name="keywords" bind:value={searchvalue}>
+                            <button id='go' type='submit'>Search Stories</button>
+                        <!-- </a> -->
+                        <!-- <button id='colaborate'>I am Arriving in London Soon!</button> -->
+                    </div>
+                </form>
+                
+                <!-- <form  action="{base}/login?/login" method='POST'>
+                    <input class="searchinput" type="text" placeholder="login" name="search">
+                </form> -->
+
 
         </div>
     </div>
@@ -72,6 +79,11 @@
 
 
 <style>
+    .searchinput {
+        /* padding: 10px 20px 10px 20px; */
+        margin-bottom: 5px;
+        height: 2.5em;
+    }
     
     
 
@@ -134,7 +146,7 @@
     .goto {
         margin-top: 20px;
     }
-
+/* 
     #go {
         color: white;
         border: 0;
@@ -144,6 +156,18 @@
         cursor: pointer;
         transition: box-shadow 0.2s;
         margin-bottom: 5px;
+    } */
+
+    #go {
+        color: white;
+        border: 0;
+        height: 3em;
+        /* padding: 10px 20px 10px 20px; */
+        background-color: rgb(16,103,222);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+        /* margin-bottom: 5px; */
     }
 
     #colaborate {
@@ -167,6 +191,13 @@
 
 
     @media only screen and (max-width: 600px) {
+        .goto {
+        margin-top: 5px;
+    }
+        .searchinput {
+        width: 250px;
+        height: 1.5em;
+    }
         .main {
     /* background-color: orange; */
     flex-flow: column;
