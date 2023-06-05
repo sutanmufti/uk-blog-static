@@ -32,6 +32,7 @@
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"dotenv": "^16.1.0",
+		"leaflet": "^1.9.4",
 		"markdown-it": "^13.0.1",
 		"markdown-it-metadata-block": "^1.0.2",
 		"redis": "^4.6.6",

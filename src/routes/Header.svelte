@@ -24,8 +24,8 @@
                     </a>
                 </div>
                 <div class='menus'>
-                        <a href="#someref">
-                        About
+                        <a href="{base}/map">
+                        Map
                     </a>
             </div>
             </div>
