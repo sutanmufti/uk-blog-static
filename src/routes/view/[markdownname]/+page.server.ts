@@ -5,7 +5,8 @@ import metadata_block from 'markdown-it-metadata-block'
 import yaml from 'yaml'
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params }) {
+export async function load(e) {
+    const {params} = e
     try {
         // 'dsf/routes/app/Test-Markdown.md'
 
