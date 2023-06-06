@@ -13,8 +13,7 @@ export interface Story {
     description: string;
     created: string;
     markdownfile: string;
-    latitude?: number;
-    longitude?: number;
+    latlong?: [number, number]
 }
 export const stories: Story[] =[
     {
@@ -22,42 +21,48 @@ export const stories: Story[] =[
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md',
+        latlong: [51.527409, -0.110218]
     },
     {
         title: 'Test Markdown 2',
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md'  ,
+        latlong: [51.541411, -0.226599]      
     },
     {
         title: 'Test Markdown',
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md'  ,
+        latlong: [51.578625, -0.117864]      
     },
     {
         title: 'Test Markdown',
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md'  ,
+        latlong: [51.466266, -0.005374]      
     },
     {
         title: 'Test Markdown',
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md'  ,
+        latlong: [51.541241, 0.235574]      
     },
     {
         title: 'Test Markdown Next page',
         author: 'Sutan Mufti',
         created: '2023-5-29',
         description: 'this is just to test posting a story. This should link to the markdown.',
-        markdownfile: 'network.md'        
+        markdownfile: 'network.md'        ,
+        latlong: [50.968047, -1.653899]
     },
     {
         title: 'Test Markdown',
