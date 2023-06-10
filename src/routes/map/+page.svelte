@@ -3,6 +3,7 @@
     export let data;
     import SearchBar from '../story/[page]/SearchBar.svelte';
     import { base } from '$app/paths';
+    import { faBlackboard } from '@fortawesome/free-solid-svg-icons';
 
     const {stories} = data
     
@@ -26,13 +27,16 @@
             shadowAnchor: [22, 94]
         });
 
+        const myDivIcon = L.divIcon({className: 'my-div-icon', html: 'ok'});
+
         stories.forEach(d=>{
             if (d.latlong){
                 const [lat,lon] = d.latlong;
 
                 L.marker([lat, lon],
                     {
-                        icon: myIcon
+                        icon: myDivIcon,
+                       
                     }
                 ).bindPopup(`<a href="${base}/view/${d.markdownfile}"> ${d.title}, ${d.description} </a>`).addTo(map);
             }
@@ -45,6 +49,16 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin="" data-sveltekit-reload/>
+
+    <style>
+
+        .my-div-icon {
+            background-color: black;
+            display: block ;
+            width: 90px; 
+            height: 90px;
+        }
+    </style>
 
     <title>Story Map</title>
 </svelte:head>
