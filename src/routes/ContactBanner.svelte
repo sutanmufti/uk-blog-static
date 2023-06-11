@@ -1,5 +1,5 @@
 <div class='main'>
-    <div style='text-align: center; margin-top: 20px'>
+    <div class='caption'>
         <h1>
             Do you have any queries about living in the UK?
         </h1>
@@ -16,18 +16,21 @@
 <style>
     h1 {
         font-weight: normal;
+        font-size: 1.25em;
+        color: black;
     }
     .main {
         display: flex;
+        /* width: 800px; */
         justify-content: center;
         flex-flow: column;
         align-items: center;
     }
 
     .caption {
-        width: 500px;
-        text-align: center;
-        margin-bottom: 50px;
+        width: 800px;
+        text-align: start;
+        margin-bottom: 10px;
     }
     @media only screen and (max-width: 600px) {
         .caption {
