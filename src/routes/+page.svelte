@@ -18,9 +18,9 @@
 
 
 <Hero/>
-<BigCard imagesrc='{base}/robert-keane-LkTchdpm9OI-unsplash.jpg' title='Discover Stories' content='Lorem Ipsum Dolor Siamet'/>
+<BigCard imagesrc='{base}/robert-keane-LkTchdpm9OI-unsplash.jpg' title='Discover Stories' content='We colect stories from our Indonesian friends and families in the UK.'/>
 <BigCard direction='row-reverse' imagesrc='{base}/robert-tudor-EjHr26LqfhI-unsplash.jpg' title='UK Experience' content='Our stories are from Indonesians in the UK. Personal and traceable. This should be a long sentence. What it will do is that it will consume the picture above.'/>
-<BigCard imagesrc='{base}/becca-tapert-u5e1kqW6E3M-unsplash.jpg' title='Discover Stories' content='Lorem Ipsum Dolor Siamet'/>
+<BigCard imagesrc='{base}/becca-tapert-u5e1kqW6E3M-unsplash.jpg' title='Indonesian Context' content='The stories brought in this blog site came from Indonesians accross the UK. A sense of comunity is at the centre of this site. Although it is designed for Indonesian, it does not mean it is not relevant to non-Indonesian.'/>
 <Features/>
 
 <ContactBanner/>
