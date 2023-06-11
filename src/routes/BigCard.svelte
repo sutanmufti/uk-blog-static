@@ -9,10 +9,12 @@
     background-image: url("${imagesrc}");
     background-size: cover;
     `
+
+    export let direction: 'row' | 'row-reverse'= 'row'
 </script>
 
 <div class='main'>
-    <div class='card' >
+    <div class='card' style='flex-direction: {direction}; text-align: {(direction == 'row')? 'start' : 'end'}'>
         <div class='mainimg' style={bg}>
 
         </div>
@@ -67,7 +69,7 @@
         display: flex;
         /* border: 1px solid red; */
         /* align-items: stretch; */
-        
+        flex-direction: row;
         width: 1100px;
         height: 400px;
     }
