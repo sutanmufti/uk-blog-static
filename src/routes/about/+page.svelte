@@ -11,4 +11,4 @@
 <SectionNoImage content='{p2}'/>
 <!-- <SectionNoImage content='{p3}'/> -->
 <Section title='The United Kingdom' content='The vision of this blog site is to become a source of information based on facts and stories of what Indonesians have gone through in the UK. This can be reviews, stories, or experiences. The end in mind is to help Indonesians to learn about living in the UK.'/>
-<SectionNoImage title='The United Kingdom' content='The vision of this blog site is to become a source of information based on facts and stories of what Indonesians have gone through in the UK. This can be reviews, stories, or experiences. The end in mind is to help Indonesians to learn about living in the UK.'/>
+<SectionNoImage title='Towards Community Resilience' content='A sense of community is what we have as a foreigner in a foreign country (if this makes sense). As people with the same background, we can watch and support for each other. Mistakes that have happened can be avoided. Lessons learned.'/>
