@@ -10,7 +10,7 @@
 
 
 <svelte:head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> -->
     <title>UKI Home</title>
     <meta name="description" content="Indonesian Survival Guide in the UK by Rekayasa Data Spasial on CeritaPeta.co.uk. This site is contains stories of Indonesians in the UK.">
 </svelte:head>
