@@ -31,13 +31,13 @@
                 </span>
                 </div>
                 <div class='caption'>
-                    We collect stories from Indonesians accross the UK. This is the knowledge repository for Indonesian in the UK
+                    We collect stories from Indonesians accross the UK. This blog site is the entry point for Indonesians with queries regarding living in the UK.
                 </div>
                 <form  method="POST" action="{base}/search/" class='inputcontainer'>
                     <div class='goto'>
                         <!-- <a href="{base}/story/0"> -->
-                            <input class="searchinput" type="text" placeholder="Search for stories" name="keywords" bind:value={searchvalue}>
-                            <button id='go' type='submit'>Search Stories</button>
+                            <input class="searchinput" type="text" placeholder="keywords to search?" name="keywords" bind:value={searchvalue}>
+                            <button id='go' type='submit'>{(searchvalue)? 'Search Story':'Go to Blog'}</button>
                         <!-- </a> -->
                         <!-- <button id='colaborate'>I am Arriving in London Soon!</button> -->
                     </div>
