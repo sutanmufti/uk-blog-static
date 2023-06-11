@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Section from "./Section.svelte";
-    import SectionNoImage from "./SectionNoImage.svelte";
+    import Section from "$lib/Section.svelte";
+    import SectionNoImage from "$lib/SectionNoImage.svelte";
 
 
     const p1 = "My name is Sutan. I am an MSc Infrastructure Planning, Appraisal, and Development UCL graduate. I graduated in 2021 and worked in the UK in 2022 as a software engineer. I've encountered some queries I struggled to answer during my time here in the UK. I had to ask friends, scour the internet, and just explore it myself. Most of these questions are basic though! For instance, how do I apply for graduate visa in the UK? How to access health care?"

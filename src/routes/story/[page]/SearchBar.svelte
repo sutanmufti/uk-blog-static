@@ -33,6 +33,7 @@
             {/if}
             <input class='searchbar' type="text" on:focusin={()=>{onfocusStatus = true}} on:focusout={()=>{onfocusStatus = false}} bind:value={searchvalue} placeholder='Any stories in mind?' name="keywords">
             {#if searchvalue}
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
                 <div class='submitbutton button' on:click={()=>{searchvalue=''}}>
                     <Fa icon={faXmark}/>
                 </div>
