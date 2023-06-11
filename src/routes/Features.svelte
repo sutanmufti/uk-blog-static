@@ -8,9 +8,9 @@
     Featured Topics:
 </div>
 <div class='main'>
-    <FeatureCard title='Student Visa' content="Are you a student coming to the UK? Look here and view some stories other students have gone through."/>
-    <FeatureCard title='Working Visa' content="Working in the UK requires a sponsor letter from the hiring company. Click here for some Indonesian expats stories of applying for Tier 2 visa."/>
-    <FeatureCard title='Feature1' content="some content"/>
+    <FeatureCard title='Arriving Students' content="Are you a student coming to the UK? Look here and view some stories other students have gone through."/>
+    <FeatureCard title='Worker Visa' content="Working in the UK require permits. How do we apply for one? Do I have working permit? This article discusses the topic."/>
+    <FeatureCard title='Finding New Homes' content="I am moving into the UK and I don't know where to live! How do I find new homes? What should I look for? Discover more in this article."/>
 </div>
 
 
