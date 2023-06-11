@@ -18,3 +18,13 @@ export function load({params}){
         maxpage: Number(maxpage)
     }
 }
+
+export const actions = {
+
+    default: async () =>{
+
+        return {}
+    }
+
+
+}
