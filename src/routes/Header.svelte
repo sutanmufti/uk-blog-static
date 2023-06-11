@@ -2,7 +2,7 @@
     import { base } from "$app/paths";
 </script>
 
-<header>
+<header data-sveltekit-reload>
     <div class='flexbox'>
         <div class='flexbox logo'>
             <img src="{base}/logo_rds.png" height=60 alt="">
