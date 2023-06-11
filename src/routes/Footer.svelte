@@ -14,6 +14,7 @@
 <style>
     footer {
         display: sticky;
+        background-color: rgb(245, 245, 245);
         bottom: 0;
     }
     .footer-container {
