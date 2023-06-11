@@ -79,7 +79,7 @@
 
     .inputcontainer{
         width: 900px;
-        height: 40px;
+        height: 30px;
         display: flex;
         font-size: 1.5em;
         color: grey;
@@ -96,7 +96,7 @@
         outline: none;
         border: none;
         background-color: inherit;
-        font-size: 1.25em;
+        font-size: 1em;
         color: inherit;
     }
     .searchbar::placeholder{
